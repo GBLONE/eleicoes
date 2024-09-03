@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login-container.css">
+    <link rel="stylesheet" href="./css/form-container.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/form-title.css">
+    <link rel="stylesheet" href="./css/form-social.css">
+    <link rel="stylesheet" href="./css/social-icon.css">
+    <link rel="stylesheet" href="./css/form-input-container.css">
+    <link rel="stylesheet" href="./css/form-input.css">
+    <link rel="stylesheet" href="./css/form-button.css">
+    <link rel="stylesheet" href="./css/overlay-container.css">
+    <link rel="stylesheet" href="./css/overlay.css">
+    <script src="./js/login.js" defer></script>
+    <script src="./js/cadastro.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    
+    <link rel="stylesheet" href="./css/mobile-text.css">
+    
+    
+    <title>Candidatos</title>
+</head>
+<body>
+    <main>
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form class="form form-login" id="login">
+                    <h2 class="form-title">Login:</h2>
+                    <p class="mobile-text">Não tem conta?
+                        <a href="#" id="open-register-mobile">Registre-se</a>
+                    </p>
+                    <div class="form-input-container">
+                        <input type="email" name="email" class="form-input" id="email" placeholder="Email" required>
+                        <input type="password" name="password" class="form-input" id="password" placeholder="Senha" required>
+                    </div>
+                    <button type="button" onclick="logar()" value="Entrar" class="form-button" id="btn-login">Entrar</button>
+                    <p2 class="form-text">Algum problema? Entre Contato:</p2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    
+                </form>
+                <form class="form form-register">
+                    <h2 class="form-title">Criar Conta:</h2>
+                    <p class="mobile-text">Já tem conta? 
+                        <a href="#" id="open-login-mobile">Entre</a>
+                    </p>
+                    <div class="form-input-container">
+                        <input type="text" class="form-input" id="registerName" placeholder="Nome" required>
+                        <input type="email" class="form-input" id="registerEmail" placeholder="Email" required>
+                        <input type="password" class="form-input" id="registerPassword" placeholder="Senha" required>
+                    </div>
+                    
+                    <button onclick="cadastro()" type="button" id="btn-register" class="form-button">Cadastrar</button>
+                    <p2 class="form-text">Algum problema? Entre Contato:</p2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Já tem uma Conta?</h2>
+                    <p2 class="form-text">Faça o login e entre na nossa plataforma!</p2>
+                    <button class="form-button form-button-light" id="open-login">Logar</button>
+                </div>
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Não tem uma Conta?</h2>
+                    <p2 class="form-text">Cadastre-se e comece a usar nossa plataforma!</p2>
+                    <button class="form-button form-button-light" id="open-register">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

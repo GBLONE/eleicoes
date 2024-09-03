@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif, Times, serif ;
+}
+
+.visuais-container {
+    background-color: #fff;
+    position: relative;
+    height: 550px;
+    width: 770px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #A0A0A0;
+    overflow: hidden;
+    z-index: 1; /* Adiciona um z-index maior para o container */
+}
+
+.imagem-fundo {
+    position: absolute; /* Torna a imagem-fundo posicionada */
+    width: 425px;
+    top: 1%;
+    left: 63%;
+    z-index: 0; /* Adiciona um z-index menor para a imagem de fundo */
+    display: flex;
+    justify-content: left;
+}
+
+.title-visuais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.all-visuais {
+    width: 93%;
+    height: 75%;
+    display: flex ;
+    justify-content: left;
+    align-items: left;
+    /* right: -20%; */
+    gap: 24px;
+    margin-top: 24px;
+    z-index: 2;
+}
+/**/
+.visuais1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
+    left: 5%;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #464646;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+.image-graphic-1{
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #a0a0a081;
+    margin-top: 0%;
+}
